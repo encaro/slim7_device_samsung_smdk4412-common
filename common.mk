@@ -61,6 +61,7 @@ PRODUCT_PACKAGES := \
     com.android.future.usb.accessory \
     gralloc.exynos4 \
     hwcomposer.exynos4 \
+    Jelly \
     libfimc \
     libfimg \
     libhwconverter \
@@ -72,6 +73,7 @@ PRODUCT_PACKAGES := \
     libUMP \
     lights.smdk4x12 \
     macloader \
+    Snap \
     tinymix
 
 # MFC API

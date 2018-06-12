@@ -54,7 +54,7 @@ TARGET_PROVIDES_INIT_TARGET_RC := true
 BOARD_KERNEL_CMDLINE := console=ttySAC2,115200
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 
 # Filesystem
@@ -170,6 +170,8 @@ BACKLIGHT_PATH := /sys/class/backlight/panel/brightness
 
 # Override healthd HAL
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.exynos4
+
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 # LPM Battery Percentage
 BOARD_CHARGER_SHOW_PERCENTAGE := true
